@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>page 5</title>
+</head>
+<body>
+    <div class="first">
+        <h4>e-Invoice & e-Archieve-EU-Turkey</h4>
+    </div>
+    
+    <div class="second">
+        <p>Create an invoice</p>
+    </div>
+    
+    <div class="third">
+        <ul class="list">
+            <li id="li">
+                <label for="btn" class="gen">General Invoice Information
+                    <span class="fas fa-caret-down"></span>
+                </label>
+                <input name="dropdown" class="inputcheck" type="checkbox" id="btn">
+                <ul class="info-box">
+                    <li class="row">
+                        <label class="col-3" for="">Portal Number</label>
+                        <input type="text" class="col-3">
+                        <label class="col-3">Invoice date</label>
+                        <input type="text" class="col-3">
+                    </li>
+                    <li class="row">
+                        <label class="col-3" for="">ETTN version Number</label>
+                        <input type="text" class="col-3">
+                        <label class="col-3">Billing Time</label>
+                        <input type="text" class="col-3">
+                    </li>
+                    <li class="row">
+                        <label class="col-3" for="">ETTN</label>
+                        <input type="text" class="col-3">
+                        <label class="col-3">Invoice Type</label>
+                        <input type="text" class="col-3">
+                    </li>
+                    <li class="row">
+                        <label class="col-3" for="">Country Customization Number</label>
+                        <input type="text" class="col-3">
+                        <label class="col-3">Bill type</label>
+                        <input type="text" class="col-3">
+                    </li>
+                    <li class="row">
+                        <label class="col-3" for="">Invoice Number</label>
+                        <input type="text" class="col-3">
+                        <label class="col-3">Branch</label>
+                        <input type="text" class="col-3">
+                    </li>
+                    <li class="row">
+                        <label class="col-3" for="">Exchange rate</label>
+                        <input type="text" class="col-3">
+                        <label class="col-3">Serial number</label>
+                        <input type="text" class="col-3">
+                    </li>
+                    <li class="row">
+                        <label class="col-3" for="">Invoice Currency</label>
+                        <input type="text" class="col-3">
+                        <label class="col-3">Invoice Template</label>
+                        <input type="text" class="col-3">
+                    </li>
+                </ul>
+            </li>
+            <li id="li">
+                <label for="btn-2" class="gen">Invoice Period Information
+                    <span class="fas fa-caret-down"></span>
+                </label>
+                <input name="dropdown" class="inputcheck" type="checkbox" id="btn-2">
+                <ul class="info-box">
+                    <li class="row" id="currentvoice">
+                        <label class="col-3" for="">Invoice Currency</label>
+                        <div class="col-md-3">
+                            <div class="input-group">
+                                <input type="text" class="col-3" class="form-control row02" placeholder="23/12/2023">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">
+                                        <i class="fa-regular fa-calendar"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="row" id="currentvoice">
+                        <label class="col-3">Invoice Template</label>
+                        <div class="col-md-3">
+                            <div class="input-group">
+                                <input type="text" class="col-3" class="form-control row02" placeholder="23/12/2023">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">
+                                        <i class="fa-regular fa-calendar"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="row" id="currentvoice">
+                        <label class="col-3"></label>
+                        <input type="text" class="col-3" class="form-control col-3" placeholder="---">
+                    </li>
+                    <li class="row" id="currentvoice">
+                        <label class="col-3"></label>
+                        <input type="text" class="col-3" class="form-control col-3">
+                    </li>
+                    <li class="row" id="currentvoice">
+                        <label class="col-3"></label>
+                        <input type="text" class="col-3" class="form-control col-3">
+                    </li>
+                </ul>
+            </li>
+            <li id="li">
+                <label for="btn-3" class="gen">Order Information
+                    <span class="fas fa-caret-down"></span>
+                </label>
+                <input name="dropdown" class="inputcheck" type="checkbox" id="btn-3">
+                <ul class="info-box">
+                    <div class="row">
+                        <label class="col-3">Order Number</label>
+                        <input type="text" class="col-3">
+                        <label class="col-3">Order date</label>
+                        <input type="text" class="col-3" placeholder="__/__/__">
+                    </div>
+                </ul>
+            </li>
+            <li id="li">
+                <label for="btn-4" class="gen">Delivery Note Information
+                    <span class="fas fa-caret-down"></span>
+                </label>
+                <input name="dropdown" class="inputcheck" type="checkbox" id="btn-4">
+                <ul class="info-box">
+                    <button id="button" class="btn btn-info">+ add</button>
+                    <button id="button" class="btn btn-secondary">- Delete</button>
+                    <table class="col-6">
+                        <tbody>
+                            <tr class="grayTable">
+                                <td id="tablecheck"><input type="checkbox"></td>
+                                <td>Waybill number</td>
+                                <td>Waybill date</td>
+                            </tr>
+                            <tr>
+                                <td id="tablecheck"><input type="checkbox"></td>
+                                <td></td>
+                                <td>__/__/__ <i class="fa-regular fa-calendar"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </ul>
+            </li>
+            <li id="li">
+                <label for="btn-5" class="gen">Receipt Information
+                    <span class="fas fa-caret-down"></span>
+                </label>
+                <input name="dropdown" class="inputcheck" type="checkbox" id="btn-5">
+                <ul class="info-box">
+                    <button id="button" class="btn btn-info">+ add</button>
+                    <button id="button" class="btn btn-secondary">- Delete</button>
+                    <table class="col-6">
+                        <tbody>
+                            <tr class="grayTable">
+                                <td id="tablecheck"><input type="checkbox"></td>
+                                <td>Document number</td>
+                                <td>Document date</td>
+                                <td>Document Type</td>
+                            </tr>
+                            <tr>
+                                <td id="tablecheck"><input type="checkbox"></td>
+                                <td>43534534535</td>
+                                <td>__/__/__ <i class="fa-regular fa-calendar"></i></td>
+                                <td>Ek1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </ul>
+            </li>
+            <li id="li">
+                <label for="btn-6" class="gen">Seller Information
+                    <span class="fas fa-caret-down"></span>
+                </label>
+                <input name="dropdown" class="inputcheck" type="checkbox" id="btn-6">
+                <ul class="info-box">
+                    <!-- <div class="row"> -->
+                        <label for="Email">E-mail:</label>
+                        <input type="email" class="col-3 mail">
+                        <br>
+                        <button id="button" class="btn btn-info">+ add</button>
+                        <button id="button" class="btn btn-secondary">- Delete</button>
+                        <table class="col-6">
+                            <tbody>
+                                <tr class="grayTable">
+                                    <td id="tablecheck"><input type="checkbox"></td>
+                                    <td>Definitions</td>
+                                    <td>Contents</td>
+                                </tr>
+                                <tr>
+                                    <td id="tablecheck"><input type="checkbox"></td>
+                                    <td>Selec</td>
+                                    <td>Özel evrak</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    <!-- </div> -->
+                </ul>
+            </li>
+            <li id="li">
+                <label for="btn-7" class="gen">Receiver Information
+                    <span class="fas fa-caret-down"></span>
+                </label>
+                <input name="dropdown" class="inputcheck" type="checkbox" id="btn-7">
+                <ul class="info-box">
+                    <li class="row">
+                        <label class="col-3">Portal Number</label>
+                        <input type="text" class="col-3">
+                        <label class="col-3">Country</label>
+                        <input type="text" class="col-3">
+                    </li>
+                    <li class="row">
+                        <label class="col-3">Vat/Citizenship Number</label>
+                        <input type="text" class="col-3">
+                        <label class="col-3">City</label>
+                        <input type="text" class="col-3">
+                    </li>
+                    <li class="row">
+                        <label class="col-3">Title</label>
+                        <input type="text" class="col-3">
+                        <label class="col-3">District / District</label>
+                        <input type="text" class="col-3">
+                    </li>
+                    <li class="row">
+                        <label class="col-3">Name</label>
+                        <input type="text" class="col-3">
+                        <label class="col-3">Neighbourhood</label>
+                        <input type="text" class="col-3">
+                    </li>
+                    <li class="row">
+                        <label class="col-3">Surname</label>
+                        <input type="text" class="col-3">
+                        <label class="col-3">Post code:</label>
+                        <input type="text" class="col-3">
+                    </li>
+                    <li class="row">
+                        <label class="col-3">Ticket</label>
+                        <input type="text" class="col-3">
+                        <label class="col-3">Phone</label>
+                        <input type="text" class="col-3">
+                    </li>
+                    <li class="row">
+                        <label class="col-3">Boulevard/Avenue/Street:</label>
+                        <input type="text" class="col-3">
+                        <label class="col-3">gsm</label>
+                        <input type="text" class="col-3">
+                    </li>
+                    <li class="row">
+                        <label class="col-3">Building Name</label>
+                        <input type="text" class="col-3">
+                        <label class="col-3">Fax</label>
+                        <input type="text" class="col-3">
+                    </li>
+                    <li class="row">
+                        <label class="col-3">Building Number</label>
+                        <input type="text" class="col-3">
+                        <label class="col-3">email</label>
+                        <input type="text" class="col-3">
+                    </li>
+                    <li class="row">
+                        <label class="col-3">Door Number</label>
+                        <input type="text" class="col-3">
+                        <label class="col-3">website</label>
+                        <input type="text" class="col-3">
+                    </li>
+                    <li class="row">
+                        <label class="col-3">Town/Village:</label>
+                        <input type="text" class="col-3">
+                        <label class="col-3">Tax Administration</label>
+                        <input type="text" class="col-3">
+                    </li>
+                    <br>
+                    <li class="savebutton row">
+                        <button class="right-button col-5"><center>Save Address</center></button>
+                    </li>
+                    <br>
+                </ul>
+            </li>
+            <li id="li">
+                <label for="btn-8" class="gen">Goods / Service Information
+                    <span class="fas fa-caret-down"></span>
+                </label>
+                <input name="dropdown" class="inputcheck" type="checkbox" id="btn-8">
+                <ul class="info-box">
+                    <div class="row">
+                        
+                    </div>
+                </ul>
+            </li>
+            <li id="li">
+                <label for="btn-9" class="gen">Totals
+                    <span class="fas fa-caret-down"></span>
+                </label>
+                <input name="dropdown" class="inputcheck" type="checkbox" id="btn-9">
+                <ul class="info-box">
+                    <div class="row">
+                        
+                    </div>
+                </ul>
+            </li>
+            <li id="li">
+                <label for="btn-10" class="gen">Payment methods
+                    <span class="fas fa-caret-down"></span>
+                </label>
+                <input name="dropdown" class="inputcheck" type="checkbox" id="btn-10">
+                <ul class="info-box">
+                    <div class="row">
+                        
+                    </div>
+                </ul>
+            </li>
+            <li id="li">
+                <label for="btn-11" class="gen">Additional Documents
+                    <span class="fas fa-caret-down"></span>
+                </label>
+                <input name="dropdown" class="inputcheck" type="checkbox" id="btn-11">
+                <ul class="info-box">
+                    <div class="row">
+                        
+                    </div>
+                </ul>
+            </li>
+            <li id="li">
+                <label for="btn-12" class="gen">Notes
+                    <span class="fas fa-caret-down"></span>
+                </label>
+                <input name="dropdown" class="inputcheck" type="checkbox" id="btn-12">
+                <ul class="info-box">
+                    <div class="row">
+                        
+                    </div>
+                </ul>
+            </li>
+            <li id="li">
+                <label for="btn-13" class="gen">Invoice Templates
+                    <span class="fas fa-caret-down"></span>
+                </label>
+                <input name="dropdown" class="inputcheck" type="checkbox" id="btn-13">
+                <ul class="info-box">
+                    <div class="row">
+                        
+                    </div>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
